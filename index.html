@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="prework-study-guide/assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img 
-          src="./assets/bowtie-cat.png" 
+          src="prework-study-guide/assets/bowtie-cat.png" 
           alt="Profile image of cat wearing a bow tie."
        />
+       <h2>✨Open the Console to See What's Happening! (ctrl+shift+i)✨</h2>
     </header>
+
+        
     <main>
       <section class = "card" id="html-section>">
 
@@ -31,10 +35,7 @@
           <li>
             a link for Block Elements
             <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Cheatsheet#block_elements">Bottom half of the cheat sheet</a>
-          </li>
-          
-          
-          
+          </li>        
         </ul>
         
 
@@ -42,6 +43,36 @@
       </section>
 
       <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">this is an <b>GREAT</b> reference guide</a><br>
+        <br>
+        <body>The '*' means that it'll apply to everything<br>
+          <blockquote>ie. * { <br>
+            margin: 0;<br>
+            padding: 0;<br>
+                }<br>
+          </blockquote>
+        This means everything element will have a margin and padding of 0.<br>
+        
+        <br>
+
+            We can combine two selectors into a single CSS rule with a comma, allowing the declarations to affect both selectors. <br>
+            Rather than repeating a rule which would add more lines of code and repetition, two or more elements that will share the same styling can be grouped together.<br>
+        <br>
+
+        <br>
+        In <code>img{display:block;}</code><br>
+          <blockquote>
+            display:block; means that each img will start on a new line<br>
+          </blockquote>
+        </body>
+        <br>
+        <mark><body>Basically, in a style sheet, I pick the exact attribute I want from each block element</body></mark><br>
+        <br>
+        <mark><body>Doesn't seem to work for inline elements</body></mark><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">For more information on CSS</a><br>
+        <br>
+        
 
       </section>
 
@@ -60,13 +91,21 @@
           <li>Note to self, figure out my SSH agent</li>
           <li><b>Make sure to spend more time with Git to fully get it!</b></li>
           <li><a href="https://bootcampspot.instructure.com/courses/4694/pages/3-dot-1-6-complete-the-git-flow?module_item_id=997676">to complete the Git workflow</a></li>
-
-
         </ul>
 
       </section>
 
       <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <ol>
+          <li>does this help?</li>
+          <li>JavaScript notes here</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JavaScript Basics</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">JavaScript Data structures</a></li>
+          <li>Conceptually, undefined indicates the absence of a value, while null indicates the absence of an object (which could also make up an excuse for typeof null === "object"). The language usually defaults to undefined when something is devoid of a value</li>
+          <li>Numbers can only be O so big,-2<sup>-1074</sup> and -2<sup>1024</sup>. To check if the number is safe, use <code>Number.isSafeInteger()</code></li>
+          <li><a href="https://javascript.info/"> Remember this website?</a></li>
+        </ol>
 
       </section>
 
@@ -79,5 +118,8 @@
     <footer>
       <p>I can code!</p>
     </footer>
+
+    <script src="prework-study-guide/assets/script.js"></script>
+
   </body>
 </html>
