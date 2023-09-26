@@ -1,10 +1,8 @@
 * {
-    margin: o;
+    margin: 0;
     padding: 0;
 }
-* {
-    background-color: black;
-}
+
 mark {
     color: red;
     font-size: 20px;
@@ -13,17 +11,27 @@ code{
     color: blue;
     font-size: 20px;
 }
-header,
-footer {
-        width: 100%;
-        height: 200px;
-        background-color: blue;
-        color: rgb(82, 4, 4);
+header {
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    
 }
-
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    color: rgb(240, 198, 11);
+}
 h1,
 h2 {
+    color: white;
     text-align: center;
+}
+
+h3{
+    font-size: 40px;
 }
 
 img {
@@ -44,7 +52,6 @@ ol{
 }
 
 .card {
-    padding: 30px;
     width: 80%;
     margin: 40px auto;
     border: 3px solid rgb(247, 165, 65);
@@ -63,13 +70,10 @@ a{
 
 
 
-
-h1,
-h2,
 ul,
 ol,
 p,
 body{
-    color: white;
+    color: black;
 }
 
