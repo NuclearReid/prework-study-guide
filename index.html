@@ -6,19 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="prework-study-guide/assets/style.css">
     <title>Prework Study Guide</title>
+    <link rel="shortcut icon" href="prework-study-guide\assets\gator.png"/>
   </head>
   <body>
     <header id="top">
+      
+
       <h1>Prework Study Guide</h1>
       <img 
-          src="prework-study-guide/assets/bowtie-cat.png" 
+          src="prework-study-guide/assets/bowtie-cat.png"
+          onclick = "playSound(); delayAlert()"
           alt="Profile image of cat wearing a bow tie."
        />
+       <audio id="amIACat" src="prework-study-guide\assets\Meow.mp3"></audio>
+       <script>
+        function playSound(){
+          var sound = document.getElementById("amIACat");
+          sound.play();
+        }
+        function delayAlert(){
+          setTimeout(function(){alert("MEOW");},20000);
+        }
+      </script>
+
+
        <h2>✨Open the Console to See What's Happening! (ctrl+shift+i)✨</h2>
     </header>
 
         
     <main>
+      <div class = "module-border-wrap"><div class="module">
       <section class = "card" id="html-section>">
 
         <h3>HTML</h3>
@@ -46,32 +63,30 @@
         <h3>CSS</h3>
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">this is an <b>GREAT</b> reference guide</a><br>
         <br>
-        <body>The '*' means that it'll apply to everything<br>
-          <blockquote>ie. * { <br>
-            margin: 0;<br>
-            padding: 0;<br>
-                }<br>
-          </blockquote>
-        This means everything element will have a margin and padding of 0.<br>
-        
-        <br>
-
-            We can combine two selectors into a single CSS rule with a comma, allowing the declarations to affect both selectors. <br>
-            Rather than repeating a rule which would add more lines of code and repetition, two or more elements that will share the same styling can be grouped together.<br>
-        <br>
-
-        <br>
-        In <code>img{display:block;}</code><br>
-          <blockquote>
-            display:block; means that each img will start on a new line<br>
-          </blockquote>
-        </body>
-        <br>
-        <mark><body>Basically, in a style sheet, I pick the exact attribute I want from each block element</body></mark><br>
-        <br>
-        <mark><body>Doesn't seem to work for inline elements</body></mark><br>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">For more information on CSS</a><br>
-        <br>
+       
+          <body>The '*' means that it'll apply to everything<br>
+            <blockquote>ie. * { <br>
+              margin: 0;<br>
+              padding: 0;<br>
+                  }<br>
+            </blockquote>
+          This means everything element will have a margin and padding of 0.<br>
+          <br>
+              We can combine two selectors into a single CSS rule with a comma, allowing the declarations to affect both selectors. <br>
+              Rather than repeating a rule which would add more lines of code and repetition, two or more elements that will share the same styling can be grouped together.<br>
+          <br>
+          <br>
+          In <code>img{display:block;}</code><br>
+            <blockquote>
+              display:block; means that each img will start on a new line<br>
+            </blockquote>
+          </body>
+          <br>
+          <mark><body>Basically, in a style sheet, I pick the exact attribute I want from each block element</body></mark><br>
+          <br>
+          <mark><body>Doesn't seem to work for inline elements</body></mark><br>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">For more information on CSS</a><br>
+          <br>    
         
 
       </section>
@@ -116,7 +131,7 @@
     </main>
 
     <footer>
-      <p>I can code!</p>
+      
     </footer>
 
     <script src="prework-study-guide/assets/script.js"></script>
